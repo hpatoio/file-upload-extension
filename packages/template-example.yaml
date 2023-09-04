@@ -1,0 +1,24 @@
+# Edit the template parameters below to see how they will render in the scaffolder form UI
+parameters:
+  - title: Fill in some steps
+    required:
+      - name
+    properties:
+      name:
+        title: Name
+        type: string
+        description: CSV file you want to upload
+      specs:
+        title: CSV data
+        type: string
+        description: CSV data
+        ui:options:
+          accept: .csv
+
+steps:
+  - id: save-file
+    name: Saving file
+    action: hpatoio:file:create
+    input:
+      filename: foo.yaml
+      content : ${{ parameters.specs }}
