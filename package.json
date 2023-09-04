@@ -63,8 +63,5 @@
   },
   "resolutions": {
     "**/rollup": "2.75.6"
-  },
-  "dependencies": {
-    "@hpatoio/plugin-file-upload-form-input": "file:/home/simone/workspace/file-upload-extension/packages/file-upload-extension/"
   }
 }
